@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="76.699997mm"
+   height="72.500031mm"
+   viewBox="0 0 76.7 72.500031"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="blinkeshit-holes.svg"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.7213359"
+     inkscape:cx="83.655955"
+     inkscape:cy="188.80684"
+     inkscape:window-width="1863"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="holes"
+     transform="translate(0.22467337,-56.254467)">
+    <path
+       d="m 66.528325,60.996267 -0.307,-0.0652 -0.286,-0.1276 -0.254,-0.1843 -0.21,-0.233 -0.156,-0.2716 -0.097,-0.2982 -0.033,-0.3119 0.033,-0.3119 0.097,-0.2982 0.156,-0.2716 0.21,-0.233 0.254,-0.1843 0.286,-0.1276 0.307,-0.0652 h 4.514 l 0.307,0.0652 0.286,0.1276 0.254,0.1843 0.21,0.233 0.156,0.2716 0.097,0.2982 0.033,0.3119 -0.033,0.3119 -0.097,0.2982 -0.156,0.2716 -0.21,0.233 -0.254,0.1843 -0.286,0.1276 -0.307,0.0652 z m -61.3197983,0 -0.3067,-0.0652 -0.2865,-0.1276 -0.2537,-0.1843 -0.2098,-0.233 -0.1568,-0.2716 -0.0969,-0.2982 -0.0328,-0.3119 0.0328,-0.3119 0.0969,-0.2982 0.1568,-0.2716 0.2098,-0.233 0.2537,-0.1843 0.2865,-0.1276 0.3067,-0.0652 h 4.5138 l 0.3069983,0.0652 0.286,0.1276 0.254,0.1843 0.21,0.233 0.156,0.2716 0.097,0.2982 0.033,0.3119 -0.033,0.3119 -0.097,0.2982 -0.156,0.2716 -0.21,0.233 -0.254,0.1843 -0.286,0.1276 -0.3069983,0.0652 z m 61.3197983,66.000023 -0.307,-0.0652 -0.286,-0.12755 -0.254,-0.18431 -0.21,-0.23305 -0.156,-0.27157 -0.097,-0.29824 -0.033,-0.31187 0.033,-0.31186 0.097,-0.29823 0.156,-0.27158 0.21,-0.23305 0.254,-0.18431 0.286,-0.12754 0.307,-0.0652 h 4.514 l 0.307,0.0652 0.286,0.12754 0.254,0.18431 0.21,0.23305 0.156,0.27158 0.097,0.29823 0.033,0.31186 -0.033,0.31187 -0.097,0.29824 -0.156,0.27157 -0.21,0.23305 -0.254,0.18431 -0.286,0.12755 -0.307,0.0652 z m -61.3197983,0 -0.3067,-0.0652 -0.2865,-0.12755 -0.2537,-0.18431 -0.2098,-0.23305 -0.1568,-0.27157 -0.0969,-0.29824 -0.0328,-0.31187 0.0328,-0.31186 0.0969,-0.29823 0.1568,-0.27158 0.2098,-0.23305 0.2537,-0.18431 0.2865,-0.12754 0.3067,-0.0652 h 4.5138 l 0.3069983,0.0652 0.286,0.12754 0.254,0.18431 0.21,0.23305 0.156,0.27158 0.097,0.29823 0.033,0.31186 -0.033,0.31187 -0.097,0.29824 -0.156,0.27157 -0.21,0.23305 -0.254,0.18431 -0.286,0.12755 -0.3069983,0.0652 z"
+       style="opacity:0.5;fill:none;stroke:#ff00ff;stroke-width:0.26458333;vector-effect:non-scaling-stroke;-inkscape-stroke:hairline;stroke-dasharray:none"
+       id="path1"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       id="path14"
+       style="vector-effect:non-scaling-stroke;fill:none;stroke:#ff00ff;stroke-width:0.264583;stroke-dasharray:none;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       d="m 16.222529,68.897394 v 3.51813 3.51865 H 24.2794 v -7.03678 z m 8.96431,0 v 3.51813 3.51865 h 8.056872 v -7.03678 z m 8.91005,0 v 3.51813 3.51865 h 8.056872 v -7.03678 z m 8.964312,0 v 3.51813 3.51865 h 8.00313 v -7.03678 z m 8.91005,0 v 3.51813 3.51865 h 8.05687 v -7.03678 z m -35.748722,7.99744 v 3.54552 3.545 H 24.2794 v -7.09052 z m 8.96431,0 v 3.54552 3.545 h 8.056872 v -7.09052 z m 8.91005,0 v 3.54552 3.545 h 8.056872 v -7.09052 z m 8.964312,0 v 3.54552 3.545 h 8.00313 v -7.09052 z m 8.91005,0 v 3.54552 3.545 h 8.05687 v -7.09052 z m -35.748722,8.05171 v 3.51864 3.51814 H 24.2794 v -7.03678 z m 8.96431,0 v 3.51864 3.51814 h 8.056872 v -7.03678 z m 8.91005,0 v 3.51864 3.51814 h 8.056872 v -7.03678 z m 8.964312,0 v 3.51864 3.51814 h 8.00313 v -7.03678 z m 8.91005,0 v 3.51864 3.51814 h 8.05687 v -7.03678 z m -35.748722,7.99796 v 3.51813 3.518649 H 24.2794 v -7.036779 z m 8.96431,0 v 3.51813 3.518649 h 8.056872 v -7.036779 z m 8.91005,0 v 3.51813 3.518649 h 8.056872 v -7.036779 z m 8.964312,0 v 3.51813 3.518649 h 8.00313 v -7.036779 z m 8.91005,0 v 3.51813 3.518649 h 8.05687 v -7.036779 z" />
+    <!-- Top Left -->
+    <!-- Top Right -->
+    <!-- Bottom Left -->
+    <!-- Bottom Right -->
+    <path
+       id="rect1"
+       style="opacity:0.5;vector-effect:non-scaling-stroke;fill:none;stroke:#ff0000;stroke-width:0.264583;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       d="M 2.1207214,65.70752 H 13.338724 c 0.831,0 1.5,0.669 1.5,1.5 v 33.65939 c 0,0.831 -0.669,1.5 -1.5,1.5 H 2.1207214 c -0.831,0 -1.5,-0.669 -1.5,-1.5 V 67.20752 c 0,-0.831 0.669,-1.5 1.5,-1.5 z" />
+    <circle
+       style="opacity:0.5;vector-effect:non-scaling-stroke;fill:none;stroke:#ff00ff;stroke-width:0.165856;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       id="path2"
+       cx="14.920424"
+       cy="114.24194"
+       r="3.0999999" />
+    <circle
+       style="opacity:0.5;vector-effect:non-scaling-stroke;fill:none;stroke:#ff00ff;stroke-width:0.165856;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       id="circle2"
+       cx="61.330227"
+       cy="114.24194"
+       r="3.0999999" />
+    <circle
+       style="opacity:0.5;vector-effect:non-scaling-stroke;fill:none;stroke:#ff00ff;stroke-width:0.247266;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       id="circle3"
+       cx="36.549347"
+       cy="114.24194"
+       r="4.6216326" />
+    <circle
+       style="opacity:0.5;vector-effect:non-scaling-stroke;fill:none;stroke:#ff00ff;stroke-width:0.087731;-inkscape-stroke:hairline;paint-order:stroke markers fill"
+       id="circle4"
+       cx="11.458128"
+       cy="80.784859"
+       r="1.6397727" />
+  </g>
+</svg>
