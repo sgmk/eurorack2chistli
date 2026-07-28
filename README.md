@@ -1,15 +1,12 @@
 # eurorack2chistli
 
-The eurocrack2chistli OpenSCAD file generates a parametric laser-cut case for Eurorack modules. It features adjustable HP width, depth, material thickness, kerf, and tilt angle. It integrates SVG files for top panel cutouts/engravings and outputs either a 3D assembly for preview or a flat 2D layout for laser cutting.
-
-## Images
-
-![OpenSCAD Preview](img/Screenshot_openScad.png)
-![2D Layout](img/Screenshot_2D-layout.png)
-![BlinkeShit Chistli](img/BlinkeShit-Chistli.png)
 ![Delay Oli](img/Delay_Oli.png)
 
+The eurocrack2chistli OpenSCAD file generates a parametric laser-cut case for Eurorack modules. It features adjustable HP width, depth, material thickness, kerf, and tilt angle. It integrates SVG files for top panel cutouts/engravings and outputs either a 3D assembly for preview or a flat 2D layout for laser cutting.
+
 ## Available Parameters
+
+![OpenSCAD Preview](img/Screenshot_openScad.png)
 
 The design is highly customizable through OpenSCAD's interface. The key parameter categories are:
 
@@ -41,3 +38,15 @@ The design is highly customizable through OpenSCAD's interface. The key paramete
     *   In the Customizer under the **Display Mode** section, change the `part_to_show` dropdown from `assembly` to `layout`.
     *   Press **F6** to fully Render the 2D geometry (this may take a moment).
     *   Once rendering is complete, go to the top menu and select **File -> Export -> Export as SVG...** (or DXF) to save the cutting file.
+
+### Presets
+
+* more info soon...
+
+## Prepare for laser cutting
+
+![2D Layout](img/Screenshot_2D-layout.png)
+
+## Examples
+
+![BlinkeShit Chistli](img/BlinkeShit-Chistli.png)
