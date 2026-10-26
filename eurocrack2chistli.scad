@@ -16,10 +16,14 @@ case_internal_height = 25.0; // [10:1:100]
 frame_rim_width = 8.0; // [5:1:30]
 // Extend the side panels to overlap the main box (creates a lip and feet)
 cheek_extension = 10.0; // [0:1:20]
-// Corner radius for the extended side panels
-cheek_radius = 5.0; // [0:0.1:20]
-// Keep the bottom of the cheeks completely flat (flush with the box)
+// Top corner radius for the extended side panels
+cheek_radius_top = 5.0; // [0:0.1:20]
+// Bottom corner radius for the extended side panels
+cheek_radius_bottom = 5.0; // [0:0.1:20]
+// Keep the bottom of the cheeks flat / use custom bottom extension
 cheek_flat_bottom = true;
+// How much the bottom of the cheeks sticks out when cheek_flat_bottom is checked (0 = flush with the box)
+cheek_bottom_extension = 0.0; // [0:0.1:20]
 
 /* [Material & Laser] */
 // Thickness of the material
@@ -81,6 +85,7 @@ case_internal_height_back = case_internal_height + id * tan(panel_tilt);
 // Outer dimensions
 ow = iw + 2 * thickness;
 od = id + 2 * thickness;
+actual_cheek_bottom_ext = (cheek_extension > 0) ? (cheek_flat_bottom ? cheek_bottom_extension : cheek_extension) : 0;
 
 // Calculated number of notches per edge
 num_notches_x = max(1, floor(iw / (2 * notch_length)));
@@ -112,6 +117,17 @@ module offset_kerf() {
     offset(delta=kerf / 2) children();
   } else {
     children();
+  }
+}
+
+module offset_rounded(ext, rad) {
+  if (rad > 0) {
+    offset(r=rad, $fn=64)
+      offset(delta=ext - rad)
+        children();
+  } else {
+    offset(delta=ext)
+      children();
   }
 }
 
@@ -230,33 +246,21 @@ module left_panel() {
   offset_kerf() {
     difference() {
       if (cheek_extension > 0) {
-        if (cheek_flat_bottom) {
-          intersection() {
-            offset(r=cheek_radius)
-              offset(delta=cheek_extension - cheek_radius)
-                polygon([
-                  [0, -thickness], 
-                  [od, -thickness], 
-                  [od, case_internal_height_back], 
-                  [od - thickness, case_internal_height_back], 
-                  [thickness, case_internal_height], 
-                  [0, case_internal_height]
-                ]);
-            // Cutoff bounding box starting exactly at the bottom of the case
-            translate([-cheek_extension - 20, -thickness])
-              square([od + 2 * cheek_extension + 40, case_internal_height_back + cheek_extension + 40]);
-          }
-        } else {
-          offset(r=cheek_radius)
-            offset(delta=cheek_extension - cheek_radius)
-              polygon([
-                [0, -thickness], 
-                [od, -thickness], 
-                [od, case_internal_height_back], 
-                [od - thickness, case_internal_height_back], 
-                [thickness, case_internal_height], 
-                [0, case_internal_height]
-              ]);
+        intersection() {
+          // Top and side profile with top corner radius
+          offset_rounded(cheek_extension, cheek_radius_top)
+            polygon([
+              [0, -thickness - actual_cheek_bottom_ext - cheek_radius_top - 10], 
+              [od, -thickness - actual_cheek_bottom_ext - cheek_radius_top - 10], 
+              [od, case_internal_height_back], 
+              [od - thickness, case_internal_height_back], 
+              [thickness, case_internal_height], 
+              [0, case_internal_height]
+            ]);
+          // Bottom and side profile with bottom extension and bottom corner radius
+          offset_rounded(cheek_extension, cheek_radius_bottom)
+            translate([0, -thickness - actual_cheek_bottom_ext + cheek_extension])
+              square([od, case_internal_height_back + actual_cheek_bottom_ext + cheek_extension + 2 * cheek_radius_bottom + 40]);
         }
       } else {
         polygon([
@@ -528,7 +532,7 @@ module layout() {
   }
 
   // Row 2: Left and Right Panels
-  row2_y = max(od + tab, case_depth) + spacing + cheek_extension + tab;
+  row2_y = max(od + tab, case_depth) + spacing + max(cheek_extension, actual_cheek_bottom_ext) + tab;
   
   translate([cheek_extension, row2_y]) left_panel();
   translate([2 * od + cheek_extension * 3 + spacing, row2_y]) mirror([1, 0]) right_panel();

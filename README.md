@@ -14,7 +14,8 @@ The design is highly customizable through OpenSCAD's interface. The key paramete
     *   `case_width_hp`: Set the width of the case in standard Eurorack HP (1 HP = 5.08mm).
     *   `case_depth`: The depth of the case (standard 3U panel height).
     *   `case_internal_height`: The internal vertical clearance for components.
-    *   `cheek_extension` & `cheek_radius`: Extend the side panels to overlap the main box (creating feet) and adjust their corner radii.
+    *   `cheek_extension`, `cheek_radius_top` & `cheek_radius_bottom`: Extend the side panels to overlap the main box (creating feet) and independently adjust their top and bottom corner radii.
+    *   `cheek_flat_bottom` & `cheek_bottom_extension`: Keep the bottom of the cheeks flush with the box (0mm) or let them stick out by a custom number of millimeters instead of the full `cheek_extension`.
 *   **Material & Laser**:
     *   `thickness`: Thickness of the material you are laser cutting (e.g., 3.0mm).
     *   `kerf`: Adjust for the laser cutter's beam width to ensure tight-fitting interlocking joints.
